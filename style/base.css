@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+}
+
+div {
+  color: rgb(17, 17, 17);
+  text-align: center;
+  overflow: hidden;
+}
