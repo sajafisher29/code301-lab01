@@ -9,8 +9,5 @@ body {
 div {
   color: rgb(17, 17, 17);
   text-align: center;
+  overflow: hidden;
 }
-
-/* #title, #menu, #top, #sub {
-  padding: 50% 0;
-} */
