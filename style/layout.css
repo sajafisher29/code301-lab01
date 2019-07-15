@@ -1,139 +1,79 @@
-@media (min-width: 768px) {
-  #title {
-    height: 100px;
-    width: 960px;
-    background-color: seagreen
-  }
-  
-  #menu {
-    height: 600px;
-    width: 200px;
-    background-color: rgb(54, 160, 100);
-    float: left;
-  }
-  
-  .top {
-    width: 760px;
-  }
-  
-  #topLeft {
-    height: 200px;
-    width: 380px;
-    background-color: rgb(62, 182, 114);
-    float: left;
-  }
-  
-  #topRight {
-    height: 200px;
-    width: 380px;
-    background-color: rgb(72, 206, 130);
-    float: right;
-  }
-  
-  .subContent {
-    width: 760px;
-  }
-  
-  #sub1 {
-    width: 190px;
-    height: 250px;
-    float: left;
-    background-color: rgb(81, 228, 144)
-  }
-  
-  #sub2 {
-    width: 190px;
-    height: 250px;
-    float: left;
-    background-color: rgb(88, 248, 157)
-  }
-  
-  #sub3 {
-    width: 190px;
-    height: 250px;
-    float: left;
-    background-color: rgba(88, 248, 157, 0.664)
-  }
-  
-  #sub4 {
-    width: 190px;
-    height: 250px;
-    float: left;
-    background-color: rgba(88, 248, 157, 0.3)
-  }
-  
-  #footer {
-    width: 760px;
-    height: 150px;
-    clear: right;
-    background-color: rgba(88, 248, 157, 0.1);
+body {
+  display: grid;
+}
+
+#title {
+  grid-area: title;
+}
+
+#menu {
+  grid-area: menu;
+}
+
+.top {
+  grid-area: top;
+}
+
+#topLeft {
+  grid-area: topLeft;
+}
+
+#topRight {
+  grid-area: topRight
+}
+
+.subContent {
+  grid-area: subContent;
+}
+
+#sub1 {
+  grid-area: sub1;
+}
+
+#sub2 {
+  grid-area: sub2;
+}
+
+#sub3 {
+  grid-area: sub3;
+}
+
+#sub4 {
+  grid-area: sub4;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+
+/* mobile */
+@media (max-width: 320px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 7% 14% 12% 12% 24% 24% 7%;
+    grid-template-areas: "title title"
+                         "menu menu"
+                         "topLeft"
+                         "topRight"
+                         "sub1 sub2"
+                         "sub3 sub4"
+                         "footer"
   }
 }
-@media (max-width: 767px) {
-  #title {
-    height: 75px;
-    width: 480px;
-    background-color: slateblue;
-  }
 
-  #menu {
-    height: 150px;
-    width: 480px;
-    background-color: rgb(81, 59, 223);
+/* tablet */
+@media (min-width: 321px) and (max-width: 767px) {
+  body {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 14% 28% 36% 21%;
   }
+}
 
-  .top {
-    width: 480px;
-  }
-
-  #topLeft {
-    height: 125px;
-    width: 480px;
-    background-color: rgb(146, 132, 236);
-  }
-
-  #topRight {
-    height: 125px;
-    width: 480px;
-    background-color:  rgb(51, 34, 165);
-  }
-
-  .subContent {
-    width: 480px;
-  }
-
-  #sub1 {
-    width: 240px;
-    height: 250px;
-    float: left;
-    background-color:  rgb(80, 56, 233);
-  }
-
-  #sub2 {
-    width: 240px;
-    height: 250px;
-    float: right;
-    background-color:  rgb(158, 150, 211);
-  }
-
-  #sub3 {
-    width: 240px;
-    height: 250px;
-    float: left;
-    background-color:  rgb(106, 85, 248);
-  }
-
-  #sub4 {
-    width: 240px;
-    height: 250px;
-    float: right;
-    background-color:  rgb(187, 177, 248);
-  }
-
-  #footer {
-    width: 480px;
-    height: 80px;
-    clear: left;
-    background-color:  rgb(37, 4, 250);
+/* desktop */
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 14% 28% 36% 21%;
   }
 }
