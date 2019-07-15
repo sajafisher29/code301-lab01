@@ -73,13 +73,13 @@
   #title {
     height: 75px;
     width: 480px;
-    background-color: seagreen
+    background-color: slateblue;
   }
 
   #menu {
     height: 150px;
     width: 480px;
-    background-color: rgb(54, 160, 100)
+    background-color: rgb(81, 59, 223);
   }
 
   .top {
@@ -89,13 +89,13 @@
   #topLeft {
     height: 125px;
     width: 480px;
-    background-color: rgb(62, 182, 114)
+    background-color: rgb(146, 132, 236);
   }
 
   #topRight {
     height: 125px;
     width: 480px;
-    background-color: rgb(72, 206, 130)
+    background-color:  rgb(51, 34, 165);
   }
 
   .subContent {
@@ -106,34 +106,34 @@
     width: 240px;
     height: 250px;
     float: left;
-    background-color: rgb(81, 228, 144)
+    background-color:  rgb(80, 56, 233);
   }
 
   #sub2 {
     width: 240px;
     height: 250px;
     float: right;
-    background-color: rgb(88, 248, 157)
+    background-color:  rgb(158, 150, 211);
   }
 
   #sub3 {
     width: 240px;
     height: 250px;
     float: left;
-    background-color: rgba(88, 248, 157, 0.664)
+    background-color:  rgb(106, 85, 248);
   }
 
   #sub4 {
     width: 240px;
     height: 250px;
     float: right;
-    background-color: rgba(88, 248, 157, 0.3)
+    background-color:  rgb(187, 177, 248);
   }
 
   #footer {
     width: 480px;
     height: 80px;
     clear: left;
-    background-color: rgba(88, 248, 157, 0.1);
+    background-color:  rgb(37, 4, 250);
   }
 }
